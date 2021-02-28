@@ -1,0 +1,24 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "Hexlet frontend project #1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muyassarov/frontend-project-lvl1.git"
+  },
+  "keywords": [
+    "hexlet",
+    "frontend",
+    "js"
+  ],
+  "author": "Behruz Muyassarov muyassarov@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muyassarov/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/muyassarov/frontend-project-lvl1#readme"
+}
