@@ -2,4 +2,5 @@
 
 import greeting from '../src/cli.js';
 
-greeting();
+const name = greeting();
+console.log(`Hello, ${name}!`);
