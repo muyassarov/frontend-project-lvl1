@@ -5,6 +5,19 @@ import runGame from '../src/cli.js';
 const NUMBER_OF_ROUNDS = 3;
 const GAME_DESCRIPTION = 'What is the result of the expression?';
 
+const calculateExp = (operand1, operand2, operator) => {
+  switch (operator) {
+    case '-':
+      return operand1 - operand2;
+    case '+':
+      return operand1 + operand2;
+    case '*':
+      return operand1 * operand2;
+    default:
+      throw new Error(`Unknown operator: ${operator}`);
+  }
+};
+
 const createRounds = () => {
   const operatorsColl = ['*', '-', '+'];
   const gameRounds = [];
@@ -14,7 +27,7 @@ const createRounds = () => {
     const operand2 = Math.floor(Math.random() * 11);
     const operator = operatorsColl[Math.floor(Math.random() * operatorsColl.length)];
     const question = `${operand1} ${operator} ${operand2}`;
-    const answer = eval(question).toString();
+    const answer = calculateExp(operand1, operand2, operator).toString();
     gameRounds.push([question, answer]);
   }
 

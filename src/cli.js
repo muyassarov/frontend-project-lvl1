@@ -11,7 +11,8 @@ const runGame = (rounds, gameDescription) => {
   const playerName = greeting();
   console.log(gameDescription);
 
-  for (const [question, answer] of rounds) {
+  for (let i = 0; i < rounds.length; i += 1) {
+    const [question, answer] = rounds[i];
     console.log(`Question: ${question}`);
 
     const playerAnswer = readlineSync.question('Your answer: ');
