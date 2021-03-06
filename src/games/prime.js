@@ -12,6 +12,7 @@ const isPrime = (num) => {
   }
   return true;
 };
+
 const runPrimeGame = () => {
   const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
   const rounds = [];
