@@ -8,6 +8,10 @@
 
 [![asciicast](https://asciinema.org/a/395422.svg)](https://asciinema.org/a/395422)
 
+- brain-calc
+
+[![asciicast](https://asciinema.org/a/8QXPuHCjwpyCinUdWL3OApUcP.svg)](https://asciinema.org/a/8QXPuHCjwpyCinUdWL3OApUcP)
+
 ### Install
 ```
 npm install
