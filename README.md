@@ -12,6 +12,11 @@
 
 [![asciicast](https://asciinema.org/a/8QXPuHCjwpyCinUdWL3OApUcP.svg)](https://asciinema.org/a/8QXPuHCjwpyCinUdWL3OApUcP)
 
+- brain-gcd
+
+[![asciicast](https://asciinema.org/a/hPVq3rxO7hYfrHvUEoVv6fPO9.svg)](https://asciinema.org/a/hPVq3rxO7hYfrHvUEoVv6fPO9)
+
+
 ### Install
 ```
 npm install
