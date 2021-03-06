@@ -19,7 +19,7 @@ const runGame = (rounds, gameDescription) => {
       return;
     }
   }
-  console.log(`Congratulations, ${playerName}`);
+  console.log(`Congratulations, ${playerName}!`);
 };
 
 export default runGame;
