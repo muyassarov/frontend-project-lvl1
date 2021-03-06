@@ -20,6 +20,10 @@
 
 [![asciicast](https://asciinema.org/a/HRsxbs7SxwWWy4YRzAxBvBabw.svg)](https://asciinema.org/a/HRsxbs7SxwWWy4YRzAxBvBabw)
 
+- brain-prime
+
+[![asciicast](https://asciinema.org/a/bTsuN3gvP4TCVlwFyhMuV1OG1.svg)](https://asciinema.org/a/bTsuN3gvP4TCVlwFyhMuV1OG1)
+
 
 ### Install
 ```
