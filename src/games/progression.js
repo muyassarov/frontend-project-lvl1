@@ -1,7 +1,7 @@
 import runGame, { NUMBER_OF_ROUNDS } from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
-const stringifyProgressionWithReplacement = (coll, index, replacement) => [...coll.slice(0, index), replacement, ...coll.slice(index + 1)].join(' ');
+const stringifyCollWithReplacement = (coll, index, replacement) => [...coll.slice(0, index), replacement, ...coll.slice(index + 1)].join(' ');
 const generateProgression = (step, length = 10) => {
   const start = Math.floor(Math.random() * 20) + 1;
   const coll = [];
@@ -23,7 +23,7 @@ const runProgressionGame = () => {
     const elementIndex = Math.floor(Math.random() * progression.length);
     const answer = progression[elementIndex].toString();
     rounds.push([
-      stringifyProgressionWithReplacement(progression, elementIndex, replacement),
+      stringifyCollWithReplacement(progression, elementIndex, replacement),
       answer,
     ]);
   }
