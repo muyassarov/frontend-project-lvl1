@@ -1,6 +1,7 @@
-import runGame from '../index.js';
+import runGame, { NUMBER_OF_ROUNDS } from '../index.js';
 
-const NUMBER_OF_ROUNDS = 3;
+const generateNum = () => Math.floor(Math.random() * 11);
+const gameDescription = 'What is the result of the expression?';
 const calculateExp = (operand1, operand2, operator) => {
   switch (operator) {
     case '-':
@@ -15,13 +16,12 @@ const calculateExp = (operand1, operand2, operator) => {
 };
 
 const runCalcGame = () => {
-  const gameDescription = 'What is the result of the expression?';
   const rounds = [];
   const operatorsColl = ['*', '-', '+'];
 
   for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
-    const operand1 = Math.floor(Math.random() * 11);
-    const operand2 = Math.floor(Math.random() * 11);
+    const operand1 = generateNum();
+    const operand2 = generateNum();
     const operator = operatorsColl[Math.floor(Math.random() * operatorsColl.length)];
     const question = `${operand1} ${operator} ${operand2}`;
     const answer = calculateExp(operand1, operand2, operator).toString();

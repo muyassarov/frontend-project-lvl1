@@ -1,6 +1,6 @@
-import runGame from '../index.js';
+import runGame, { NUMBER_OF_ROUNDS } from '../index.js';
 
-const NUMBER_OF_ROUNDS = 3;
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 const gcd = (num1, num2) => {
   if (num2) {
     return gcd(num2, num1 % num2);
@@ -9,7 +9,6 @@ const gcd = (num1, num2) => {
 };
 
 const runGcdGame = () => {
-  const gameDescription = 'Find the greatest common divisor of given numbers.';
   const rounds = [];
 
   for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
