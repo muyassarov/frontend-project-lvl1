@@ -1,6 +1,6 @@
 import runGame, { NUMBER_OF_ROUNDS } from '../index.js';
+import getRandomInt from '../utils.js';
 
-const generateNum = () => Math.floor(Math.random() * 11);
 const gameDescription = 'What is the result of the expression?';
 const calculateExp = (operand1, operand2, operator) => {
   switch (operator) {
@@ -20,9 +20,9 @@ const runCalcGame = () => {
   const operatorsColl = ['*', '-', '+'];
 
   for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
-    const operand1 = generateNum();
-    const operand2 = generateNum();
-    const operator = operatorsColl[Math.floor(Math.random() * operatorsColl.length)];
+    const operand1 = getRandomInt(1, 10);
+    const operand2 = getRandomInt(1, 10);
+    const operator = operatorsColl[getRandomInt(0, operatorsColl.length)];
     const question = `${operand1} ${operator} ${operand2}`;
     const answer = calculateExp(operand1, operand2, operator).toString();
     rounds.push([question, answer]);
