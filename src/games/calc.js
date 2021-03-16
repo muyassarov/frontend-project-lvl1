@@ -1,5 +1,5 @@
-import runGame, { NUMBER_OF_ROUNDS } from '../index.js';
-import getRandomInt from '../utils.js';
+import runGame from '../index.js';
+import { generateRandomInt } from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 const calculateExp = (operand1, operand2, operator) => {
@@ -15,19 +15,14 @@ const calculateExp = (operand1, operand2, operator) => {
   }
 };
 
-const runCalcGame = () => {
-  const rounds = [];
+const generateRound = () => {
   const operatorsColl = ['*', '-', '+'];
-
-  for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
-    const operand1 = getRandomInt(1, 10);
-    const operand2 = getRandomInt(1, 10);
-    const operator = operatorsColl[getRandomInt(0, operatorsColl.length)];
-    const question = `${operand1} ${operator} ${operand2}`;
-    const answer = calculateExp(operand1, operand2, operator).toString();
-    rounds.push([question, answer]);
-  }
-
-  runGame(rounds, gameDescription);
+  const operand1 = generateRandomInt(1, 10);
+  const operand2 = generateRandomInt(1, 10);
+  const operator = operatorsColl[generateRandomInt(0, operatorsColl.length)];
+  const question = `${operand1} ${operator} ${operand2}`;
+  const answer = calculateExp(operand1, operand2, operator).toString();
+  return [question, answer];
 };
-export default runCalcGame;
+
+export default () => runGame(generateRound, gameDescription);

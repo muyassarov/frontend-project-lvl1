@@ -1,30 +1,28 @@
-import runGame, { NUMBER_OF_ROUNDS } from '../index.js';
-import getRandomInt from '../utils.js';
+import runGame from '../index.js';
+import { generateRandomInt } from '../utils.js';
 
 const gameDescription = 'What number is missing in the progression?';
-const generateProgression = (start, step, indexToReplace, length = 10) => {
+const generateProgression = (first, step, hideElementIndex, length = 10) => {
   const elements = [];
-  const maxValue = step * length + start;
-  let currentValue = start;
-  while (currentValue < maxValue) {
-    elements.push(currentValue);
-    currentValue += step;
+  let element;
+  for (let i = 0; i < length; i += 1) {
+    element = i * step + first;
+    if (i === hideElementIndex) {
+      element = '..';
+    }
+    elements.push(element);
   }
-  return [...elements.slice(0, indexToReplace), '..', ...elements.slice(indexToReplace + 1)].join(' ');
+  return elements.join(' ');
 };
 
-const runProgressionGame = () => {
-  const rounds = [];
-  const progressionLength = 10;
-  for (let i = 0; i < NUMBER_OF_ROUNDS; i += 1) {
-    const step = getRandomInt(1, 10);
-    const start = getRandomInt(0, 20);
-    const elementIndex = getRandomInt(0, progressionLength);
-    const progression = generateProgression(start, step, elementIndex, progressionLength);
-    const answer = start + step * elementIndex;
-    rounds.push([progression, answer.toString()]);
-  }
-  runGame(rounds, gameDescription);
+const generateRound = () => {
+  const length = 10;
+  const step = generateRandomInt(1, 10);
+  const first = generateRandomInt(0, 20);
+  const hideElementIndex = generateRandomInt(0, length);
+  const question = generateProgression(first, step, hideElementIndex, length);
+  const answer = (first + step * hideElementIndex).toString();
+  return [question, answer];
 };
 
-export default runProgressionGame;
+export default () => runGame(generateRound, gameDescription);
