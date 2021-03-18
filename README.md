@@ -10,19 +10,19 @@
 
 - brain-calc
 
-[![asciicast](https://asciinema.org/a/8QXPuHCjwpyCinUdWL3OApUcP.svg)](https://asciinema.org/a/8QXPuHCjwpyCinUdWL3OApUcP)
+[![asciicast](https://asciinema.org/a/A2szt7zKSymJw5QZRayxoBDBs.svg)](https://asciinema.org/a/A2szt7zKSymJw5QZRayxoBDBs)
 
 - brain-gcd
 
-[![asciicast](https://asciinema.org/a/hPVq3rxO7hYfrHvUEoVv6fPO9.svg)](https://asciinema.org/a/hPVq3rxO7hYfrHvUEoVv6fPO9)
+[![asciicast](https://asciinema.org/a/65PSaYKpVY9VMiTWD1FzQlTKC.svg)](https://asciinema.org/a/65PSaYKpVY9VMiTWD1FzQlTKC)
 
 - brain-progression
 
-[![asciicast](https://asciinema.org/a/HRsxbs7SxwWWy4YRzAxBvBabw.svg)](https://asciinema.org/a/HRsxbs7SxwWWy4YRzAxBvBabw)
+[![asciicast](https://asciinema.org/a/oILFRgLiyNB4OmBpixhAdqLBk.svg)](https://asciinema.org/a/oILFRgLiyNB4OmBpixhAdqLBk)
 
 - brain-prime
 
-[![asciicast](https://asciinema.org/a/bTsuN3gvP4TCVlwFyhMuV1OG1.svg)](https://asciinema.org/a/bTsuN3gvP4TCVlwFyhMuV1OG1)
+[![asciicast](https://asciinema.org/a/sKUqJFguMto2WZV5HC8rpJFRy.svg)](https://asciinema.org/a/sKUqJFguMto2WZV5HC8rpJFRy)
 
 
 ### Install
