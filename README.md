@@ -1,5 +1,6 @@
 ## Bunches of command line games
 
+[![Linter](https://github.com/muyassarov/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)](https://github.com/muyassarov/frontend-project-lvl1/actions/workflows/linter-check.yml)
 [![Actions Status](https://github.com/muyassarov/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/muyassarov/frontend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f93af70d6dc42d4c232a/maintainability)](https://codeclimate.com/github/muyassarov/frontend-project-lvl1/maintainability)
 
